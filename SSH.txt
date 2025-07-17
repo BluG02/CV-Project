@@ -1,0 +1,6 @@
+SSH
+Nginx/RTMP 서버 실행: sudo /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf   
+확인: ps aux | grep nginx
+
+nano 편집기: sudo nano /usr/local/nginx/conf/nginx.conf
+저장/나가기: 컨o +엔터 (저장) / 컨x (나가기)
