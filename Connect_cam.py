@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 
 # FFmpeg 실행 파일 경로
-ffmpeg_path = "C:/ffmpeg-7.1.1-essentials_build/ffmpeg-7.1.1-essentials_build/bin/ffmpeg.exe"
+ffmpeg_exe = r"C:\Users\ckseh\OneDrive\바탕 화면\공모전\학술제\ffmpeg-7.1.1-essentials_build\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe"
 
 # RTMP 스트림 주소 (Streamlabs 앱에서 송출 중)
 rtmp_url = "rtmp://34.47.71.66/live/cam1"
@@ -23,7 +23,7 @@ process = (
     ffmpeg
     .input(rtmp_url, fflags='nobuffer', flags='low_delay', rtbufsize='100M')
     .output('pipe:', format='rawvideo', pix_fmt='bgr24', s=f'{width}x{height}')
-    .run_async(pipe_stdout=True, cmd=ffmpeg_path)
+    .run_async(pipe_stdout=True, cmd= ffmpeg_exe)
 )
 
 
