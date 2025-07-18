@@ -3,6 +3,7 @@ import ffmpeg
 import numpy as np
 import cv2
 
+
 # FFmpeg 실행 파일 경로
 ffmpeg_exe = r"C:\Users\ckseh\OneDrive\바탕 화면\공모전\학술제\ffmpeg-7.1.1-essentials_build\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe"
 
